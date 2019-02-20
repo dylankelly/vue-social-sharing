@@ -245,7 +245,7 @@ var SocialSharing = {
      * @param  hashtags All hashtags specified
      */
     generateHashtags: function generateHashtags (network, hashtags) {
-      var hashes = hashtags.split(',')
+      var hashes = hashtags.split(',');
       if (network === 'facebook' && hashes.length > 0) {
         return '%23' + hashes[0];
       }
